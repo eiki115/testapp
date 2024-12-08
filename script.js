@@ -123,7 +123,7 @@ function showEconomicInfo() {
     });
 
     const btn = createButton("確認した", ()=> {
-        showStatus("次はモードを選びましょう");
+        showStatus("支払いモードを選んでください");
         showModeSelection();
     });
     controlsElement.appendChild(btn);
@@ -475,7 +475,6 @@ function getEconomicEvent() {
     return {name:e.name, desc:e.desc, ...res};
 }
 
-// 閉じるボタンなし、モーダルなしでalertで説明表示
 function showEventDesc(txt) {
     alert(txt);
 }
